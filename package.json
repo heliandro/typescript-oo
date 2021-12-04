@@ -1,0 +1,22 @@
+{
+  "name": "typescript-oo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon --watch ./dist ./dist/app.js",
+    "start": "concurrently \"npm run watch-ts\" \"npm run watch-node\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.2"
+  }
+}
